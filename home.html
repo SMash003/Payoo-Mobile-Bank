@@ -37,11 +37,11 @@
             <img class="mx-auto" src="assets/send1.png" alt="">
             <h2>Cashout</h2>
         </div>
-        <div class="border-2 rounded-lg border-gray-300 text-center p-3">
+        <div id="transfer-button" class="border-2 rounded-lg border-gray-300 text-center p-3">
             <img class="mx-auto" src="assets/money1.png" alt="">
             <h2>Transfer Money</h2>
         </div>
-        <div class="border-2 rounded-lg border-gray-300 text-center p-3">
+        <div id="bonus-button" class="border-2 rounded-lg border-gray-300 text-center p-3">
             <img class="mx-auto" src="assets/bonus1.png" alt="">
             <h2>Get Bonus</h2>
         </div>
@@ -57,7 +57,8 @@
 </div>
 
 <div class="all-form-section max-w-lg mx-auto ">
-    <div id="addmoney-parent">
+    <!-- add money -->
+    <div class="form" id="addmoney-parent">
         <h1 class="my-5 text-xl font-bold ml-3">Add Money</h1>
         <form action="" class="bg-white rounded-2xl p-8">
             <div >
@@ -88,8 +89,8 @@
         </form>
     </div>
 
-
-    <div id="cashout-parent"  style="display: none;">
+    <!-- cash out -->
+    <div class="form" id="cashout-parent"  style="display: none;">
         <h1 class="my-5 text-xl font-bold ml-3">Cash Out</h1>
         <form action="" class="bg-white rounded-2xl p-8">
             
@@ -111,6 +112,16 @@
             <button id="withdraw-btn" class="btn bg-[#0874F2] mt-5 w-full rounded-3xl font-semibold text-white">Withdraw Money</button>
         </form>
     </div>
+
+    <!-- transfer money -->
+     <div class="form" id="transfer-money-parent" style="display: none;">
+        <h1 class="my-5 text-xl font-bold ml-3">Transfer Money</h1>
+     </div>
+
+     <!-- get bonus -->
+    <div class="form" id="get-bonus-parent" style="display: none;">
+        <h1 class="my-5 text-xl font-bold ml-3">Get Bonus</h1>
+     </div>
 </div>
 
 <script src="home.js"></script>
